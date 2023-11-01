@@ -1,0 +1,21 @@
+.main{
+    display: flex;
+    flex-direction: row;
+}
+
+.mainTitle{
+    font-family: 'Parisienne', cursive;
+    color: white;
+}
+
+.logo{
+    height: 52px;
+}
+
+.mainnav{
+    background: transparent;
+}
+
+.col{
+    color: white;
+}
