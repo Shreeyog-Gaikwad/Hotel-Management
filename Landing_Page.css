@@ -5,9 +5,10 @@
     flex-direction: row;
 }
 
-.inner{
-    position: absolute;
+.blur{
+    backdrop-filter: blur(4px);
 }
+
 .mainTitle{
     font-family: 'Dancing Script', cursive;
     color: white;
@@ -24,25 +25,17 @@
     height: 52px;
 }
 
-.mainnav{
-    background: transparent;
-}
-
 .rightOpt{
     background-color: rgb(47, 47, 47);
     border-radius: 20px;
 }
 
-.rightOpt:hover{
-    color: blue;
-}
-
 .signup{
     border: 3px solid #fff;
     background: none;
-    padding: 15px 30px;
+    padding: 12px 24px;
     font-size: 20px;
-    font-family: "montserrat";
+    font-family: 'Dancing Script', cursive;
     cursor: pointer;
     margin: 10px;
     transition: 0.8s;
@@ -50,7 +43,6 @@
     overflow: hidden;
     color: #fff;
     border-radius: 20px;
-    font-weight: bold;
 }
 
 .signup:hover{
@@ -73,3 +65,10 @@
 .signup:hover::before{
     height: 180%;
 }
+
+.drop{
+    margin-right: 0% ;
+}
+
+
+
