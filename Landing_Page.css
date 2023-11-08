@@ -1,0 +1,75 @@
+/**Landing Page**/
+
+.main{
+    display: flex;
+    flex-direction: row;
+}
+
+.inner{
+    position: absolute;
+}
+.mainTitle{
+    font-family: 'Dancing Script', cursive;
+    color: white;
+}
+
+.title{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 12em;
+}
+
+.logo{
+    height: 52px;
+}
+
+.mainnav{
+    background: transparent;
+}
+
+.rightOpt{
+    background-color: rgb(47, 47, 47);
+    border-radius: 20px;
+}
+
+.rightOpt:hover{
+    color: blue;
+}
+
+.signup{
+    border: 3px solid #fff;
+    background: none;
+    padding: 15px 30px;
+    font-size: 20px;
+    font-family: "montserrat";
+    cursor: pointer;
+    margin: 10px;
+    transition: 0.8s;
+    position: relative;
+    overflow: hidden;
+    color: #fff;
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+.signup:hover{
+    color: rgb(47, 47, 47);;
+}
+
+.signup::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 0%;
+    background: #fff;
+    z-index: -1;
+    transition: 0.8s;
+    bottom: 0;
+    border-radius: 50% 50% 0 0;
+}
+
+.signup:hover::before{
+    height: 180%;
+}
