@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="Contact_Us.css">
     <script src="https://kit.fontawesome.com/35b645cae8.js" crossorigin="anonymous"></script>      
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <title>Contact Us</title>
@@ -23,21 +23,21 @@
           <div class="rightOpt">
           <ul class="nav">
             <li class="nav-item">
-              <a  class="nav-link link-light link-offset-2" href="" >Home</a>
+              <a  class="nav-link link-light link-offset-2" href="Landing_Page.html" >Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link link-light link-offset-2" href="">About</a>
+              <a class="nav-link link-light link-offset-2" href="../Hotel-Management-/About _Us.html">About</a>
             </li>
             <li class="nav-item">
               
-              <a class="nav-link link-light link-offset-2" href=""><i class="fa-solid fa-right-to-bracket px-2"></i>Sign In</a>
+              <a class="nav-link link-light link-offset-2" href="signin-up.html"><i class="fa-solid fa-right-to-bracket px-2"></i>Sign In</a>
             </li>
             <li class="nav-item dropdown ms-4 me-5">
               <a class="nav-link dropdown-toggle link-light link-offset-2" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">More</a>
               <ul class="dropdown-menu drop">
                 <li><a class="dropdown-item" href="">Gallery</a></li>
                 <li><a class="dropdown-item" href="">Blogs</a></li>
-                <li><a class="dropdown-item" href="">Contact</a></li>
+                <li><a class="dropdown-item" href="Contact_Us.html">Contact</a></li>
               </ul>
             </li>
           </ul>
@@ -55,23 +55,35 @@
                     <div class="icon"><i class="fa-solid fa-location-dot"></i></div>
                     <div class="text">
                         <h3>Address</h3>
-                        <p>Maheshnagar,<br> House No-67,<br> Pimpri Pune <br> 411018</p>
+                        <p>Heaven,<br> Block No-143,<br> Earth Land <br> 143143</p>
                     </div>
                 </div>
                 <div class="box">
                     <div class="icon"><i class="fa-solid fa-phone"></i></div>
                     <div class="text">
                         <h3>Phone</h3>
-                        <p>9527264942</p>
+                        <p>143143143143</p>
                     </div>
                 </div>
                 <div class="box">
                     <div class="icon"><i class="fa-solid fa-envelope"></i></div>
                     <div class="text">
                         <h3>Email</h3>
-                        <p>shreeyogaikwad@gmail.com</p>
+                        <p>khayalipulaav@gmail.com</p>
                     </div>
                 </div>
+                <div class="box">
+                  <div class="icon"><i class="fa-solid fa-arrow-right"></i></div>
+                  <div class="text">
+                      <h3>Follow Us On</h3>
+                      <p>
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-facebook"></i>
+                        <i class="fa-brands fa-linkedin"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                      </p>
+                  </div>
+              </div>
             </div>
             <div class="contactForm">
                 <form action="">
@@ -90,16 +102,23 @@
                         <span>Type your Message....</span>
                     </div>
                     <div class="inputBox">
-                        <input type="submit" value="Send">
+                        <input type="submit" value="Send" onclick="openPopup()">
                     </div>
                 </form>
             </div>
         </div>
       </section>
+      <div class="popup" id="popup">
+        <img src="../Hotel-Management-/Images/Check.png" alt="">
+        <h2>Thank You!</h2>
+        <p>Your details have been successfully submitted. <br> Our team will contact you soon. <br>Thanks!</p>
+        <button type="button" onclick="closePopup()">OK</button>
+      </div>
       <br>
 
     </div>
 
 </body>
+<script src="Contact_Us.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </html>
